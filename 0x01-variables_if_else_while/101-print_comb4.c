@@ -8,6 +8,7 @@ int main(void)
 	int i;
 	int j;
 	int k;
+
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 1; j < 10; j++)
@@ -21,7 +22,8 @@ int main(void)
 					putchar(48 + k);
 					if (i == 7 && j == 8 && k == 9)
 						continue;
-					else{
+					else
+					{
 						putchar(',');
 						putchar(' ');
 					}
