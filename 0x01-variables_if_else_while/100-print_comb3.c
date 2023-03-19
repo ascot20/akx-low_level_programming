@@ -16,8 +16,13 @@ int main(void)
 		{	
 		putchar(48 + i);
 		putchar(48 + j);
-		putchar(',');
-		putchar(' ');
+			if (i == 8 && j ==9)
+			continue;
+			else
+			{
+			putchar(',');
+			putchar(' ');
+			}
 		}
 		}
 	}
