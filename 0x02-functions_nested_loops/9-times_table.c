@@ -14,11 +14,17 @@ void times_table(void)
 		while (j < 10)
 		{
 			int number = i * j;
+
+			if (number > 9)
+			{
 			_putchar((number / 10) + '0');
 			_putchar((number % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			}
+			else
+				_putchar(number + '0')
 			j++;
 		}
 		i++;
