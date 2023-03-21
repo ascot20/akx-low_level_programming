@@ -1,15 +1,17 @@
 #include "main.h"
-
 /**
- * print_str - prints a string
+ * main- Entry point
+ * Return: 0
  */
-int print_str(char *str)
+int main(void)
 {
+	char str[] = "_putchar";
 	int i = 0;
+
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
-		i++;
 	}
+	_putchar('\n');
 	return (0);
 }
