@@ -22,10 +22,13 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			j++
 			}
 			else
+			{
 				_putchar(number + '0');
-			j++;
+				j++;
+			}
 		}
 		i++;
 		_putchar('\n');
