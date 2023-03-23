@@ -5,6 +5,7 @@
  */
 void print_trinagle(int size){
     int space = size - 1;
+
     while(space >= 0){
         int hash = size - space;
 
