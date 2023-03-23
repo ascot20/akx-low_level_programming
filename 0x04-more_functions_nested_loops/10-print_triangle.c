@@ -1,6 +1,9 @@
 #include "main.h"
-
-void printcar(int size){
+/**
+ * print_triangle- print triangle
+ * @size:input
+ */
+void print_trinagle(int size){
     int space = size - 1;
     while(space >= 0){
         int hash = size - space;
