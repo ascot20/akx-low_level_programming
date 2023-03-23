@@ -13,7 +13,6 @@ if (n <= 0)
 n = 0;
 _putchar('\n');
 }
-
 while (n--)
 {
 while (space--)
