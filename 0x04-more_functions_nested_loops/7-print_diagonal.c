@@ -5,20 +5,23 @@
  */
 void print_diagonal(int n)
 {
-int total = n;
-int space = 0;
+	int c, i;
 
-if (n <= 0)
-{
-n = 0;
-_putchar('\n');
-}
-while (n--)
-{
-while (space--)
-_putchar(' ');
-space = total - n;
-_putchar(92);
-_putchar('\n');
-}
+	c = 0;
+
+	while (n > 0)
+	{
+		i = c;
+		while (i > 0)
+		{
+			_putchar(' ');
+			i--;
+		}
+		_putchar('\\');
+		_putchar('\n');
+		c++;
+		n--;
+	}
+	if (c < 1)
+		_putchar('\n');
 }
