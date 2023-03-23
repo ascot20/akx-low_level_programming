@@ -3,7 +3,7 @@
  * print_triangle- print triangle
  * @size:input
  */
-void print_trinagle(int size)
+void print_triangle(int size)
 {
 	int space = size - 1;
 
