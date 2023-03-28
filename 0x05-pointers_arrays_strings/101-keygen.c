@@ -17,9 +17,10 @@ char random_char() {
 int main() {
     
     char password[21];
+    int i;
     
     srand(time(NULL));
-    for (int i = 0; i < 20; i++) {
+    for (i = 0; i < 20; i++) {
         password[i] = random_char();
     }
     password[20] = '\0';
