@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Function to generate a random character from the allowed range
+
 char random_char() {
     int r = rand() % 62;
     if (r < 26) {
@@ -15,17 +15,17 @@ char random_char() {
 }
 
 int main() {
-    // Seed the random number generator with the current time
+    
     srand(time(NULL));
 
-    // Generate a random password of length 20
+    
     char password[21];
     for (int i = 0; i < 20; i++) {
         password[i] = random_char();
     }
     password[20] = '\0';
 
-    // Print the password
+  
     printf("%s\n", password);
 
     return 0;
