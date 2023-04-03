@@ -6,23 +6,22 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *p1 = haystack;
-	char *p2 = needle;
-	char *p3 = NULL;
-	
-	while (*p1 != '\0')
-	{
-		p3 = p1;
-		
-		while (*p2 == *p3 && *p2 != '\0')
-		{
-			p2++;
-			p3++;
-		}
-		if (*p2 == '\0')
-			return p1;
-		p2 = needle;
-		p1++;
-	}
-	return NULL;
+char *str1, *str2; 
+
+while (*haystack != '\0')
+{
+str1 = haystack; 
+str2 = needle;
+
+
+while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
+{
+haystack++;
+str2++;
+}
+if (*str2 == '\0')
+return (str1);
+haystack = str1 + 1;
+}
+return (0);	
 }
