@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 /**
 * main-entry point
 * @argc:argument counter
@@ -18,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		char *arg = argv[i];
 		int j;
-        int num;
+		int num;
 
 		for (j = 0; arg[j] != '\0'; j++)
 		{
