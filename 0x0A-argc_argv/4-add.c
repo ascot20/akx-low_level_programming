@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 			}
 		}
 			int num = atoi(arg);
+
 			if (num <= 0)
 				continue;
 			sum += num;
