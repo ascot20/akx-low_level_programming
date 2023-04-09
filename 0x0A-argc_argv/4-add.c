@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
+#include <string.h>
 /**
 * main-entry point
 * @argc:argument counter
