@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int size = strlen(str);
+	unsigned int size = strlen(str) + 1;
 	char *ptr = (char *)malloc(sizeof(char) * size);
 	unsigned int i;
 
