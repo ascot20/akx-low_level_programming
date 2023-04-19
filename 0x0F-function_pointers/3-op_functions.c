@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 /**
  * op_add-returns the sum
  * @a:int variable
