@@ -1,5 +1,6 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
+
 #include <stdarg.h>
 /**
  *struct call-struct type
@@ -10,7 +11,7 @@
 typedef struct
 {
 	char *type;
-	void (*funcptr)(va_list);
+	void (*funcptr)();
 } Call;
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
