@@ -1,10 +1,12 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+
 /**
- * sum_them_all-function that returns sum of int
- * @n:constant unsigned int
- * Return:return int sum
+ * sum_them_all - function that returns sum of int
+ * @n: constant unsigned int
+ * Return: return int sum
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
@@ -20,5 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(args, int);
 
 	va_end(args);
+
 	return (sum);
 }
