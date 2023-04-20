@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - function that returns sum of int
+ * sum_them_all - returns sum of int
  * @n: constant unsigned int
  * Return: return int sum
  */
@@ -10,7 +10,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
-       	int sum = 0;
+	int sum = 0;
 	va_list args;
 
 	va_start(args, n);
