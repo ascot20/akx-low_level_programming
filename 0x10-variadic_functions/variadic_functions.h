@@ -6,6 +6,7 @@
  * struct call-struct type
  * @type:char pointer
  * @funcptr:function pointer
+ *
  * Description: Structure to store var type and func
  */
 
