@@ -44,7 +44,7 @@ void print_string(va_list args)
 
 void print_char(va_list args)
 {
-        printf("%c", va_arg(args, int));
+	printf("%c", va_arg(args, int));
 }
 
 /**
