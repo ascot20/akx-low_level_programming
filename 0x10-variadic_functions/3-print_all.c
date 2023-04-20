@@ -1,7 +1,5 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
-#include <string.h>
 /**
  * print_int-function to print int
  * @args:va_list
@@ -66,7 +64,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	
+
 	i = 0;
 	while (format && format[i])
 	{
