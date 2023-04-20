@@ -3,9 +3,10 @@
 
 #include <stdarg.h>
 /**
- *struct call-struct type
- *@type:char pointer
- *@funcptr:function pointer
+ * struct call-struct type
+ * @type:char pointer
+ * @funcptr:function pointer
+ * Description: Structure to store var type and func
  */
 
 typedef struct Call
