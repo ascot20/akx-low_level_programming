@@ -16,7 +16,7 @@ size_t list_len(const list_t *h)
 	i = 0;
 	while (sptr != NULL)
 	{
-		spre = sptr->next;
+		sptr = sptr->next;
 		i++;
 	}
 	return (i);
