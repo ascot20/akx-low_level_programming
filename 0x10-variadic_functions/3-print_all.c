@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
-#include <string.h>
+
 /**
  * print_int-function to print int
  * @args:va_list
  */
+
 void print_int(va_list args)
 {
 	printf("%d", va_arg(args, int));
@@ -15,6 +15,7 @@ void print_int(va_list args)
  * print_float-function to print float
  * @args:va_list
  */
+
 void print_float(va_list args)
 {
 	printf("%f", va_arg(args, double));
@@ -24,6 +25,7 @@ void print_float(va_list args)
  * print_string-function to print string
  * @args:va_list
  */
+
 void print_string(va_list args)
 {
 	char *str;
@@ -31,21 +33,19 @@ void print_string(va_list args)
 	str = va_arg(args, char *);
 
 	if (str == NULL)
-		printf("(nil)");
-	else
-		printf("%s", str);
+		str = "(nil)";
+	printf("%s", str);
 }
 
 /**
  * print_char-function to print char
  * @args:va_list
  */
+
 void print_char(va_list args)
 {
-        printf("%c", va_arg(args, int));
+	printf("%c", va_arg(args, int));
 }
-
-
 
 /**
  * print_all-function that prints anything
@@ -56,6 +56,7 @@ void print_all(const char * const format, ...)
 	int i, j;
 	va_list args;
 	char *sep = "";
+
 	Call types[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -65,7 +66,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	
+
 	i = 0;
 	while (format && format[i])
 	{

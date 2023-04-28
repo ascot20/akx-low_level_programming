@@ -1,17 +1,19 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
+
 #include <stdarg.h>
 /**
- *struct call-struct type
- *@type:char pointer
- *@funcptr:function pointer
+ * struct call-struct type
+ * @type:char pointer
+ * @funcptr:function pointer
  */
 
-typedef struct
+typedef struct Call
 {
 	char *type;
 	void (*funcptr)(va_list);
 } Call;
+int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
